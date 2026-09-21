@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ángela &amp; Fernando · Nos casamos</title>
+  <meta name="description" content="Ángela y Fernando se casan. Consulta el programa, cómo llegar, tu mesa y confirma tu asistencia.">
+  <meta name="theme-color" content="#B5201A">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Ángela &amp; Fernando · Nos casamos">
+  <meta property="og:description" content="Toda la información de nuestra boda y la confirmación de asistencia.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%23B5201A'/%3E%3Ctext x='50' y='64' font-size='38' text-anchor='middle' fill='%23FBF6EE' font-family='Georgia,serif' font-style='italic'%3EA F%3C/text%3E%3C/svg%3E">
+
+  <script>document.documentElement.classList.add("js");</script>
+
+  <!-- Tipografías: nombres = Pinyon Script · títulos = Bodoni Moda · texto = Hanken Grotesk -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Hanken+Grotesk:wght@300;400;500;600&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <!-- Motivos vegetales reutilizables -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="flor" viewBox="0 0 100 100">
+        <g fill="currentColor" style="stroke:var(--contorno-flor, #FBF6EE);stroke-width:1.6">
+          <ellipse cx="50" cy="27" rx="18" ry="24"/>
+          <ellipse cx="50" cy="27" rx="18" ry="24" transform="rotate(72 50 50)"/>
+          <ellipse cx="50" cy="27" rx="18" ry="24" transform="rotate(144 50 50)"/>
+          <ellipse cx="50" cy="27" rx="18" ry="24" transform="rotate(216 50 50)"/>
+          <ellipse cx="50" cy="27" rx="18" ry="24" transform="rotate(288 50 50)"/>
+        </g>
+        <circle cx="50" cy="50" r="9" fill="#4E0F1E"/>
+        <g fill="#4E0F1E">
+          <circle cx="50" cy="35" r="1.6"/><circle cx="65" cy="50" r="1.6"/>
+          <circle cx="50" cy="65" r="1.6"/><circle cx="35" cy="50" r="1.6"/>
+        </g>
+      </symbol>
+      <symbol id="ramita" viewBox="0 0 220 40">
+        <path d="M4 22 C60 10 130 12 216 20" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+        <g fill="currentColor">
+          <ellipse cx="40" cy="15" rx="10" ry="3.4" transform="rotate(-28 40 15)"/>
+          <ellipse cx="52" cy="26" rx="10" ry="3.4" transform="rotate(28 52 26)"/>
+          <ellipse cx="82" cy="12" rx="10" ry="3.4" transform="rotate(-24 82 12)"/>
+          <ellipse cx="94" cy="23" rx="10" ry="3.4" transform="rotate(26 94 23)"/>
+          <ellipse cx="128" cy="11" rx="10" ry="3.4" transform="rotate(-20 128 11)"/>
+          <ellipse cx="140" cy="22" rx="10" ry="3.4" transform="rotate(22 140 22)"/>
+          <ellipse cx="176" cy="12" rx="9" ry="3" transform="rotate(-16 176 12)"/>
+          <ellipse cx="188" cy="22" rx="9" ry="3" transform="rotate(18 188 22)"/>
+        </g>
+      </symbol>
+    </defs>
+  </svg>
+
+  <header class="header" id="cabecera">
+    <div class="contenedor header__in">
+      <a class="logo" href="#inicio" aria-label="Ángela y Fernando, ir al inicio">Á<i>&amp;</i>F</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú">
+        <span></span><span></span>
+      </button>
+      <nav class="nav" id="menu" aria-label="Principal">
+        <ul>
+          <li><a href="#historia">Nuestra historia</a></li>
+          <li><a href="#programa">El día</a></li>
+          <li><a href="#lugar">Dónde</a></li>
+          <li><a href="#info">Información útil</a></li>
+          <li><a href="#mesas">Tu mesa</a></li>
+          <li><a href="#rsvp">Confirmar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+
+    <!-- ============ PORTADA ============ -->
+    <section class="hero" id="inicio">
+      <div class="hero__arco">
+        <svg class="f f1" aria-hidden="true"><use href="#flor"/></svg>
+        <svg class="f f2" aria-hidden="true"><use href="#flor"/></svg>
+        <svg class="f f3" aria-hidden="true"><use href="#flor"/></svg>
+        <svg class="f f4" aria-hidden="true"><use href="#flor"/></svg>
+
+        <p class="hero__nos-casamos">Nos casamos</p>
+        <h1 class="nombres" aria-label="Ángela y Fernando">
+          <span>Ángela</span>
+          <span class="amp" aria-hidden="true">&amp;</span>
+          <span>Fernando</span>
+        </h1>
+        <p class="hero__fecha" data-bind="fechaLarga">Próximamente</p>
+        <p class="hero__lugar" data-bind="celebracionNombre"></p>
+
+        <div class="countdown" data-countdown aria-label="Cuenta atrás para la boda">
+          <div><strong data-cd="dias">00</strong><span>días</span></div>
+          <div><strong data-cd="horas">00</strong><span>horas</span></div>
+          <div><strong data-cd="minutos">00</strong><span>minutos</span></div>
+          <div><strong data-cd="segundos">00</strong><span>segundos</span></div>
+        </div>
+
+        <a class="btn btn--marfil" href="#rsvp">Confirmar asistencia</a>
+      </div>
+    </section>
+
+    <!-- ============ HISTORIA ============ -->
+    <section class="seccion" id="historia">
+      <div class="contenedor dos-col">
+        <!-- Sube tu foto como img/historia.jpg -->
+        <div class="foto foto--arco" data-foto="img/historia.jpg" role="img" aria-label="Foto de Ángela y Fernando"></div>
+        <div>
+          <h2>Nuestra historia</h2>
+          <div class="divisor" aria-hidden="true">
+            <svg class="ramita"><use href="#ramita"/></svg>
+            <svg class="flor"><use href="#flor"/></svg>
+            <svg class="ramita ramita--espejo"><use href="#ramita"/></svg>
+          </div>
+          <!-- EDITA: cuenta aquí vuestra historia -->
+          <p class="destacado">Hay historias que empiezan sin que nadie se dé cuenta, y un día resulta que ya no se pueden contar sin el otro.</p>
+          <p>Escribid aquí cómo os conocisteis, el primer plan que hicisteis juntos y el momento en que supisteis que queríais celebrarlo con toda la gente que os importa. Con cuatro o cinco líneas es suficiente.</p>
+          <p>Ahora queremos que estéis a nuestro lado en el día más especial.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROGRAMA ============ -->
+    <section class="seccion seccion--arena" id="programa">
+      <div class="contenedor programa">
+        <h2>Así será el día</h2>
+        <ol class="horario">
+          <li>
+            <span class="horario__hora" data-bind="hora">17:30</span>
+            <div>
+              <h3>Ceremonia</h3>
+              <p>Llegad con unos minutos de margen: no queremos que nadie se pierda el «sí, quiero».</p>
+            </div>
+          </li>
+          <li>
+            <span class="horario__hora">19:00</span>
+            <div>
+              <h3>Cóctel</h3>
+              <p>Un brindis y algo rico para picar mientras nos hacemos las fotos.</p>
+            </div>
+          </li>
+          <li>
+            <span class="horario__hora">21:00</span>
+            <div>
+              <h3>Banquete</h3>
+              <p>Cena sentados. Más abajo podéis buscar vuestra mesa.</p>
+            </div>
+          </li>
+          <li>
+            <span class="horario__hora">23:30</span>
+            <div>
+              <h3>Fiesta</h3>
+              <p>Baile hasta que aguanten los pies. Traed calzado cómodo para cambiaros.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ LUGAR ============ -->
+    <section class="seccion" id="lugar">
+      <div class="contenedor">
+        <h2 class="centro">Dónde</h2>
+        <div class="lugares">
+          <article class="lugar">
+            <svg class="mini" aria-hidden="true"><use href="#flor"/></svg>
+            <h3>Ceremonia</h3>
+            <p class="lugar__nombre" data-bind="ceremoniaNombre"></p>
+            <p data-bind="ceremoniaDireccion"></p>
+            <p class="lugar__cuando"><span data-bind="fechaLarga"></span>, a las <span data-bind="hora"></span></p>
+            <a class="btn btn--linea" data-mapa="ceremonia" target="_blank" rel="noopener">Cómo llegar</a>
+          </article>
+          <article class="lugar">
+            <svg class="mini" aria-hidden="true"><use href="#flor"/></svg>
+            <h3>Celebración</h3>
+            <p class="lugar__nombre" data-bind="celebracionNombre"></p>
+            <p data-bind="celebracionDireccion"></p>
+            <p class="lugar__cuando">Cóctel, banquete y fiesta</p>
+            <a class="btn btn--linea" data-mapa="celebracion" target="_blank" rel="noopener">Cómo llegar</a>
+          </article>
+        </div>
+        <p class="centro"><button class="btn" type="button" data-calendario>Añadir al calendario</button></p>
+      </div>
+    </section>
+
+    <!-- ============ INFO ÚTIL ============ -->
+    <section class="seccion seccion--arena" id="info">
+      <div class="contenedor">
+        <h2 class="centro">Información útil</h2>
+        <div class="info">
+          <div>
+            <h3>Vestimenta</h3>
+            <p>Etiqueta. Si os apetece, un toque de rojo en el look nos hará mucha ilusión.</p>
+          </div>
+          <div>
+            <h3>Alojamiento</h3>
+            <p>Añadid aquí los hoteles cercanos, el enlace de reserva y el código con precio especial para invitados.</p>
+          </div>
+          <div>
+            <h3>Transporte y aparcamiento</h3>
+            <p>Indicad si habrá autobuses, desde dónde salen, dónde se puede aparcar y a qué hora termina el servicio.</p>
+          </div>
+          <div>
+            <h3>Regalo</h3>
+            <p>Vuestra presencia es lo más importante. Si queréis tener un detalle con nosotros, aquí pondremos cómo hacerlo.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MESAS ============ -->
+    <section class="seccion" id="mesas">
+      <div class="contenedor buscador">
+        <h2 class="centro">Encuentra tu mesa</h2>
+        <p class="centro">Escribe tu nombre o tu apellido y te decimos dónde te sentarás.</p>
+        <label class="sr-only" for="buscar-mesa">Tu nombre o apellido</label>
+        <input class="campo-buscar" id="buscar-mesa" type="search" placeholder="Por ejemplo: García" autocomplete="off">
+        <ul class="resultados" id="resultados-mesa" aria-live="polite"></ul>
+      </div>
+    </section>
+
+    <!-- ============ RSVP ============ -->
+    <section class="seccion seccion--burdeos" id="rsvp">
+      <div class="contenedor rsvp">
+        <h2>¿Nos acompañáis?</h2>
+        <p class="rsvp__intro">Confirmad antes del <span data-bind="fechaLimite">1 de mayo</span> para que podamos organizarlo todo.</p>
+
+        <form id="form-rsvp" class="form" novalidate>
+          <div class="fila">
+            <div class="campo">
+              <label for="nombre">Nombre y apellidos</label>
+              <input id="nombre" name="nombre" type="text" autocomplete="name" required>
+            </div>
+            <div class="campo">
+              <label for="email">Correo electrónico</label>
+              <input id="email" name="email" type="email" autocomplete="email" required>
+            </div>
+          </div>
+
+          <fieldset class="campo">
+            <legend>¿Vendrás?</legend>
+            <div class="opciones">
+              <label class="opcion"><input type="radio" name="asistencia" value="si" required><span>Sí, allí estaré</span></label>
+              <label class="opcion"><input type="radio" name="asistencia" value="no"><span>No podré ir</span></label>
+            </div>
+          </fieldset>
+
+          <div class="fila" data-solo-si>
+            <div class="campo">
+              <label for="acompanantes">Número de acompañantes</label>
+              <input id="acompanantes" name="acompanantes" type="number" min="0" max="6" value="0" inputmode="numeric">
+            </div>
+            <div class="campo">
+              <label for="cancion">¿Qué canción no puede faltar?</label>
+              <input id="cancion" name="cancion" type="text">
+            </div>
+          </div>
+
+          <div class="campo" data-solo-si>
+            <label for="alergias">Alergias o menú especial</label>
+            <textarea id="alergias" name="alergias" rows="2"></textarea>
+          </div>
+
+          <div class="campo">
+            <label for="mensaje">Un mensaje para nosotros</label>
+            <textarea id="mensaje" name="mensaje" rows="3"></textarea>
+          </div>
+
+          <!-- Campo trampa contra spam: debe quedar vacío -->
+          <div class="trampa" aria-hidden="true">
+            <label>No rellenar <input type="text" name="_gotcha" tabindex="-1" autocomplete="off"></label>
+          </div>
+
+          <button class="btn btn--marfil" type="submit">Enviar confirmación</button>
+          <p class="estado" id="estado-rsvp" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p class="pie__nombres">Ángela <i>&amp;</i> Fernando</p>
+    <p data-bind="fechaLarga"></p>
+    <p class="pie__hashtag" data-bind="hashtag"></p>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
